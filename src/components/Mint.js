@@ -76,7 +76,7 @@ function Mint({ account }) {
       <div className='bg-black rounded-lg md:w-4/5 mt-5 w-full mx-auto flex flex-col items-center py-5'>
         <h2 className='text-white md:text-2xl font-semibold text-xl'>
           <span className='text-amber-600'>{totalSupply}</span>/{' '}
-          <span>{process.env.REACT_APP_MAX_SUPPLY}</span>
+          <span>{process.env.REACT_APP_MAX_SUPPLY || 1000}</span>
         </h2>
         <h3 className='text-lg text-white my-3'>
           Total Price:{process.env.REACT_APP_NFT_PRICE} ETH
